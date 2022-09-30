@@ -1,0 +1,111 @@
+
+Exercícios das unidades
+
+
+Unidade 1
+Exercícios práticos
+1. Crie uma função em JavaScript que receba como argumento três números. Essa função deverá verificar qual é o maior número entre os três e exibir esse número no console. 
+Para resolver este exercício você deverá fazer uso de variáveis e estrutura de decisão IF.
+
+2. Crie um array e inicialize-o com os valores 1, 2, 3, 4, 5, 6, 7, 8, 9 ,10. Crie uma função que receba como argumento um número qualquer. 
+Utilizando a estrutura de repetição for, verifique se o valor passado como parâmetro está armazenado no array. Se estiver, apresente no console a posição do array onde o número 
+está armazenado. Caso contrário, exiba no console uma mensagem informando que o número não foi encontrado.
+
+3. Crie um array de 10 posições e armazene nesse array 10 números quaisquer. Use a função Map() para gerar um novo array com o dobro de cada valor armazenado.
+
+4. Crie uma função que receba dois números como parâmetros e execute a soma desses dois números. Dentro dessa função você deverá criar uma promise que verificará se o resultado 
+dessa soma é um número par. Se for sucesso, a promise deverá exibir no console o número resultante e a mensagem “o número é par”. Caso contrário, a promise deverá exibir a 
+mensagem “O número não é par”.
+
+
+
+Unidade 2
+Exercícios práticos
+1. Crie uma página HTML com um botão que tenha o título “Calcular Tabuada”. Diante disso, em um arquivo externo, manipule o evento de click desse botão da seguinte forma:
+- capture o elemento botão;
+- crie uma função que calcule a tabuada do número 8 e atribua essa função a uma variável. Utilize a estrutura de repetição for para calcular a tabuada e o console para exibir 
+os valores calculados;
+- usando escutadores de eventos, adicione ao evento de click do botão a função criada no tópico anterior.
+
+2. Alterando o HTML do exercício anterior, adicione um novo botão com o título “Calcular tabuada do numero 5”. A partir disso, altere o código Javascript do exercício 
+anterior do seguinte modo:
+- capture o elemento botão adicionado;
+- adicione um escutador para o evento de click. Quando o botão for clicado, um código Javascript deverá ser executado removendo o evento do botão que calcula a tabuada 
+e incluindo uma nova função que calcule agora a tabuada do número 5.
+
+3. Crie um formulário de contato em HTML com os seguintes campos:
+-Nome.
+-E-mail para contato.
+-Tipo de contato contendo uma lista com as opções: contato, sugestão ou reclamação.
+-Mensagem.
+Em um arquivo Javascript externo, valide se o usuário preencheu todos os campos. Para isso, utilize o evento onBlur, para verificar se as informações dos inputs texts 
+foram preenchidas, e o onChange, para verificar se o usuário selecionou algum item. Caso o campo esteja em branco, emita um alerta.
+
+
+
+Unidade 3
+Exercícios práticos
+1. Crie um HTML com um formulário de contato básico solicitando ao usuário que digite o seu nome, e-mail, assunto e mensagem (para isso use um textarea). Em seguida, 
+invente um arquivo script.js e implemente um script que:
+a) Selecione os campos utilizando o método getElementById(<id>) e atribua-os a constantes.
+b) Verifique se o nome, e-mail e mensagem foram informados. Caso não tenham sido informados quaisquer um desses campos, emita um alerta avisando o usuário.
+Para isso, use o objeto form.
+
+2. Crie um formulário de login, solicitando que o usuário digite o e-mail como login e uma senha. Além disso, invente um arquivo script.js e programe a validação dos 
+dados de login digitados. Para realizar a validação, faça uma constante com o login e outra com a senha e compare com os dados digitados. Se os dados não forem iguais, 
+crie um elemento parágrafo log abaixo do campo menu, defina o texto com a mensagem “Login ou senha inválido!”. Caso os dados estejam corretos, emita um alerta informando 
+“login correto”.
+
+3. Crie uma página HTML, CSS e um semáforo por meio do CSS e mais dois botões com o título PARAR e SEGUIR. Quando o estudante clicar no botão SEGUIR, o semáforo troca a 
+luz para verde; e, quando clicar no botão para PARAR, o semáforo troca a luz para vermelho.
+
+4. Desafio: utilizando o código HTML do exemplo código 6 (transcrito a seguir) e o JavaScript do exemplo código 2 (transcrito a seguir), implemente um novo botão que quando 
+acionado o evento de clique, crie um novo curso na página. Lembre-se de observar a estrutura de um novo curso e adicione todos os elementos desta estrutura.
+
+
+
+Unidade 4
+Exercícios práticos
+1. Crie uma página html contendo um formulário e três botões. No formulário, o usuário deverá preencher um campo informando seu e-mail. Os botões que você deverá criar são: 
+GRAVAR, que irá gravar o e-mail digitado na sessão; RECUPERAR, que irá recuperar a informação armazenada na sessão e exibir no console; e LIMPAR, que irá excluir a informação 
+da sessão.
+
+2. Altere o código Javascript do exercício gravando, recuperando e excluindo a informação no localStorage.
+
+3. Crie um formulário que irá solicitar ao usuário que informe seu nome, a data de nascimento e o seu CPF. Quando o formulário for submetido você deverá armazenar os dados do 
+formulário em um banco de dados simulado por um array e esse array deverá ser armazenado no localStorage. Cada informação cadastrada deverá ser salva em um objeto e este objeto 
+atribuído ao array. Você deverá exibir os dados já cadastrados em uma tabela. Quando você abrir a página novamente, ou atualizar a página, não se esqueça de recuperar as informações.
+
+
+Entrega parcial do desafio
+Critérios que serão considerados:
+Unidade 1
+- Criação de variáveis com let e const
+- Criação do array que irá simular um banco de dados para armazenar as tarefas
+- Criação de objetos literais estáticos para simular registros no banco de dados
+- Inclusão desses registros no array
+- Criação e utilização de funções
+
+Unidade 2
+- Manipulação através de listeners
+- Manipulação de evento no botão de adicionar, concluir e excluir tarefa
+- Manipulação de eventos no combo filtro de tarefas
+
+
+Entrega final do desafio
+Unidade 3
+- Manipulação do evento de submit do formulário e cancelamento da ação default
+- Recuperar os elementos de formulários e os valores neles digitados utilizando o objeto FORM
+- Função que cria um objeto com os valores digitados no formulário
+- Função que adiciona o objeto criado no array
+- Criação, adição e remoção de elementos na lista de tarefas de forma dinâmica utilizando JavaScript
+
+Unidade 4
+- Criação de uma página de login
+- Redirecionamento para a página de tarefas apenas se o usuário estiver logado
+- Armazenamento, recuperação e exclusão de dados na sessão utilizando a API Web Storage
+- Armazenamento, recuperação e exclusão do objeto array no armazenamento local do navegador utilizando a API Web Storage
+
+Harison Herman, [31/07/2022 15:07]
+Esses exercícios práticos são opcionais e não valem ponto, por isso imagino que eles nem façam, pra falar a verdade.
+Essa entrega parcial do desafio e entrega final do desafio é que valem ponto e é referente ao projeto que deve ser entregue no fim.
