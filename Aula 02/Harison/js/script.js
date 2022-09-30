@@ -2,6 +2,35 @@
 const formulario = document.querySelector("#form01")
 let listaAtividades = Array()
 
+//explicação de callback
+function calcula(a, b, fn){
+    let calculado = fn(a, b)
+    return calculado
+}
+
+function soma(num1, num2){
+    return num1 + num2
+}
+
+function subtrai(num1, num2){
+    return num1 - num2
+}
+
+function multiplica(a, b){
+    return a * b
+}
+
+let teste1 = calcula(1, 2, soma)
+console.log(`teste1 = ${teste1}`)
+
+let teste2 = calcula(5, 1, subtrai)
+console.log(`teste2 = ${teste2}`)
+
+let teste3 = calcula(6, 2, multiplica)
+console.log(`teste3 = ${teste3}`)
+
+
+
 formulario.addEventListener('submit', function(evt){
     evt.preventDefault()
     if(valida(formulario)) {
