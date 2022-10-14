@@ -1,6 +1,7 @@
 # Masterclass Javascript
 ## Aula 04 - Professor Harison
 
+- Atualizar a lista ao remover um item
 - Revisão da manipulação do DOM
 - APIs HTML5: clipboard, canvas, arquivos, GPS e várias outras
 - As funções podem ser reutilizadas para atualizar os elementos armazenados
