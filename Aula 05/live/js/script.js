@@ -123,6 +123,7 @@ function insereNoDOM(obj){
         let linhaTarget = target.parentNode.parentNode
         tabela.removeChild(linhaTarget)
         removeDaLista(obj)
+        
     })
 
     btnArquivar.addEventListener("click", (evento) => {
